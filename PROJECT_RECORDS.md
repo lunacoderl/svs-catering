@@ -117,3 +117,39 @@
      - Streamlined primary navigation links and hidden overflow links on smaller desktop screens (`hideOnLg`) to prevent horizontal clipping.
 - **Verification**: `npm run build` completed cleanly with 0 TypeScript/Vite errors.
 - **Git Push**: Committed and pushed to GitHub remote `origin/main`.
+
+### Phase 8: Exact Reference Blueprint Navigation Redesign (2026-11-02)
+- **Reference Image**: `media_1793600672039_3e3177c1.jpg` ("Modern & User-Friendly Navigation Design").
+- **Desktop Navbar (Full View)**:
+  - Top Bar (`bg-[#5a0d14]` deep crimson):
+    - Direct hotlines: `📞 Santanosh: +91 90324 79193 | 📞 Naidu: +91 90324 79194 | 💬 WhatsApp Inquiry`
+    - Right pill: `⏱️ 24/7 Booking` in cream `#fff4dd` with dark text `#5a0d14`.
+  - Main Bar:
+    - Logo + `S.V.S. CATERING` + `శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్`.
+    - Navigation Links:
+      - `[ 🏠 Home ]` solid crimson active pill (`bg-[#80141c] text-white`).
+      - `Heritage`, `Feasts`.
+      - `Occasions ▾` with hover/click dropdown card listing 5 celebrations:
+        - `💍 Weddings (Pelli Vindu)`
+        - `🏠 Gruhapravesam`
+        - `👶 Sreemantham / Seemantham`
+        - `🎂 Birthday & Half-Saree`
+        - `👥 Corporate Events`
+      - `Venues`, `Gallery`, `Reviews`, `FAQ`, `Contact`.
+    - Action Buttons:
+      - `[ 🛎️ Menu Quote ]` with custom SVG banquet cloche icon, cream background `#fff8ea`, gold border.
+      - `[ 📅 Book Now ]` with calendar check icon, solid crimson background `#80141c`, white text.
+- **Mobile Navbar (Menu Open)**:
+  - Header: Logo + `S.V.S. CATERING` + solid crimson square hamburger/close button.
+  - Drawer (`bg-[#fffdfa]`):
+    - `Home` active peach pill (`bg-[#ffedd5] text-[#80141c]`).
+    - `Heritage`, `Feasts`.
+    - `Occasions ▾` with expandable accordion for all 5 sub-events.
+    - `Venues`, `Gallery`, `Reviews`, `FAQ`, `Contact`.
+    - Divider.
+    - Dual buttons grid: `Menu Quote` + `Book Now`.
+    - Direct hotlines: `📞 Santanosh: +91 90324 79193` & `📞 Naidu: +91 90324 79194`.
+    - Full-width bright green rounded pill: `[ 💬 WhatsApp Inquiry ]`.
+    - Full-width light cream rounded pill: `[ ⏱️ 24/7 Booking ]`.
+- **Verification**: `npm run build` completed with 0 errors.
+- **Git Push**: Committed and pushed to GitHub remote `origin/main`.
