@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
                   S.V.S. CATERING
                 </span>
                 <span className="font-telugu text-[11px] text-[#991b1b] font-bold block">
-                  శ్రీ వెంకటేశ్వర స్వామి క్యాటరింగ్
+                  శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్
                 </span>
               </div>
             </div>
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
                     +91 90324 79193 <span className="font-normal text-stone-500 font-telugu">(సంతోష్ - Santanosh)</span>
                   </a>
                   <a href="tel:9032479194" className="text-stone-900 hover:text-[#b45309] font-bold block mt-0.5">
-                    +91 90324 79194 <span className="font-normal text-stone-500 font-telugu">(నాయుడు - Nayudu)</span>
+                    +91 90324 79194 <span className="font-normal text-stone-500 font-telugu">(నాయుడు - Naidu)</span>
                   </a>
                   <span className="text-[10px] text-stone-500 block mt-0.5">
                     Additional: +91 79892 96958 • +91 70136 66316

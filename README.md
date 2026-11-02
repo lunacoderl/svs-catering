@@ -1,4 +1,4 @@
-# S.V.S. Catering (శ్రీ వెంకటేశ్వర స్వామి క్యాటరింగ్)
+# S.V.S. Catering (శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్)
 
 > **Celebrating 10+ Years of Royal Feasts & Auspicious Celebrations (2015 – 2025+)**  
 > Serving Anakapalle, Visakhapatnam (Vizag), and across Andhra Pradesh.
@@ -11,7 +11,7 @@
 - **Headquarters Address**: Sivanaidu Gardens, Karrivari Street, Gavarapalem, Anakapalli, Visakhapatnam, Andhra Pradesh – 531002.
 - **Founders & Direct Hotlines**:
   - **Santanosh (సంతోష్)**: `+91 90324 79193` (Owner & Culinary Director)
-  - **Nayudu (నాయుడు)**: `+91 90324 79194` (Owner & Operations Lead)
+  - **Naidu (నాయుడు)**: `+91 90324 79194` (Owner & Operations Lead)
   - **Support Lines**: `+91 79892 96958`, `+91 70136 66316`
 - **Email**: `svscatering.vizag@gmail.com`
 

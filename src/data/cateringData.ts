@@ -2,14 +2,14 @@ import type { FoodItem, OccasionItem, MenuPackage, Testimonial, FaqItem } from '
 
 export const BUSINESS_INFO = {
   name: 'S.V.S. Catering',
-  teluguName: 'శ్రీ వెంకటేశ్వర స్వామి క్యాటరింగ్ (SVS Catering)',
+  teluguName: 'శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్ (SVS Catering)',
   tagline: 'Traditional Flavors | Grand Events | Complete Catering',
   anniversary: '10th Anniversary Celebrated (2015 - 2026+)',
   address: 'Sivanaidu Gardens, Karrivari Street, Gavarapalem, Anakapalli, Visakhapatnam, Andhra Pradesh – 531002',
   email: 'svscatering.vizag@gmail.com',
   primaryContacts: [
     { name: 'Santanosh (సంతోష్)', phone: '+91 90324 79193', role: 'Owner & Catering Director' },
-    { name: 'Nayudu (నాయుడు)', phone: '+91 90324 79194', role: 'Owner & Operations Lead' },
+    { name: 'Naidu (నాయుడు)', phone: '+91 90324 79194', role: 'Owner & Operations Lead' },
   ],
   supportHotlines: ['+91 79892 96958', '+91 70136 66316'],
   serviceAreas: [
@@ -227,7 +227,7 @@ export const TESTIMONIALS: Testimonial[] = [
     event: 'Daughter\'s Grand Wedding (1,200 Guests)',
     date: 'February 2025',
     rating: 5,
-    quote: 'Santanosh and Nayudu took care of everything like our own brothers. The Gutti Vankaya, Dum Biryani, and live Jalebi stall were talked about by every guest for weeks! Unbeatable taste and punctuality.',
+    quote: 'Santanosh and Naidu took care of everything like our own brothers. The Gutti Vankaya, Dum Biryani, and live Jalebi stall were talked about by every guest for weeks! Unbeatable taste and punctuality.',
     teluguQuote: 'మా అమ్మాయి పెళ్ళిలో వంటలు అద్భుతం! సంతోష్, నాయుడు గారు స్వయంగా దగ్గరుండి వడ్డించారు.',
   },
   {
@@ -255,7 +255,7 @@ export const TESTIMONIALS: Testimonial[] = [
 export const FAQS: FaqItem[] = [
   {
     question: 'How do I book a date quota for our event with S.V.S. Catering?',
-    answer: 'You can check availability directly using our interactive Booking Quota Menu on this website, or call owners Santanosh (+91 90324 79193) or Nayudu (+91 90324 79194). For auspicious wedding muhurthams, we advise booking 3 to 6 months in advance.',
+    answer: 'You can check availability directly using our interactive Booking Quota Menu on this website, or call owners Santanosh (+91 90324 79193) or Naidu (+91 90324 79194). For auspicious wedding muhurthams, we advise booking 3 to 6 months in advance.',
   },
   {
     question: 'Can we schedule a food tasting session before confirming the contract?',

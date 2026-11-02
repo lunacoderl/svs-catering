@@ -37,24 +37,25 @@ export const Navbar: React.FC = () => {
 
   return (
     <div className="sticky top-0 z-50 w-full shadow-sm">
-      {/* Sleek Top Announcement Strip (Slim & Compact) */}
+      {/* Sleek Top Announcement Strip (Slim & Compact with BOTH NUMBERS ON SCREEN) */}
       <div className="bg-gradient-to-r from-[#881337] via-[#9a3412] to-[#881337] text-amber-100 text-[11px] py-1 px-3 border-b border-amber-300/20">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-1.5">
           <div className="flex items-center gap-1.5 truncate">
             <span className="h-1.5 w-1.5 rounded-full bg-[#fde047] animate-ping shrink-0" />
             <span className="font-semibold truncate">
-              🎉 10+ Yrs Milestone (2015-2025) • Anakapalle & Visakhapatnam
+              🎉 10+ Yrs (2015-2025) • శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్
             </span>
           </div>
-          <div className="flex items-center gap-3 text-[11px] font-semibold shrink-0">
+          {/* BOTH NUMBERS EXPLICITLY ON SCREEN */}
+          <div className="flex items-center gap-2 sm:gap-3 text-[11px] font-semibold shrink-0">
             <a href="tel:9032479193" className="hover:text-white transition-colors flex items-center gap-1">
               <Phone className="h-2.5 w-2.5 text-[#fde047]" />
-              <span className="hidden sm:inline">Santanosh:</span> 90324 79193
+              <span>Santanosh:</span> <strong className="text-white">90324 79193</strong>
             </a>
-            <span className="hidden md:inline text-amber-200/40">|</span>
-            <a href="tel:9032479194" className="hidden md:flex hover:text-white transition-colors items-center gap-1">
+            <span className="text-amber-200/50">|</span>
+            <a href="tel:9032479194" className="hover:text-white transition-colors flex items-center gap-1">
               <Phone className="h-2.5 w-2.5 text-[#fde047]" />
-              <span>Nayudu:</span> 90324 79194
+              <span>Naidu:</span> <strong className="text-white">90324 79194</strong>
             </a>
           </div>
         </div>
@@ -69,7 +70,7 @@ export const Navbar: React.FC = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-8 flex items-center justify-between gap-2">
-          {/* Brand Logo & Compact Identity */}
+          {/* Brand Logo & Compact Identity with Correct Telugu Full Form */}
           <a href="#hero" className="flex items-center gap-2 group shrink-0">
             <img
               src="/logo.png"
@@ -85,8 +86,8 @@ export const Navbar: React.FC = () => {
                   10 Yrs
                 </span>
               </div>
-              <span className="font-telugu text-[10px] text-[#991b1b] font-medium leading-tight">
-                శ్రీ వెంకటేశ్వర స్వామి క్యాటరింగ్
+              <span className="font-telugu text-[10px] text-[#991b1b] font-bold leading-tight">
+                శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్
               </span>
             </div>
           </a>
@@ -112,8 +113,8 @@ export const Navbar: React.FC = () => {
             })}
           </nav>
 
-          {/* Quick Header Actions */}
-          <div className="flex items-center gap-2">
+          {/* Quick Header Actions with BOTH Naidu 90324 79194 and Santanosh 90324 79193 */}
+          <div className="flex items-center gap-1.5 sm:gap-2">
             <a
               href="#booking-quota"
               className="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-amber-400 bg-amber-50 hover:bg-amber-100 text-[#78350f] text-xs font-bold transition-all shadow-2xs"
@@ -122,12 +123,25 @@ export const Navbar: React.FC = () => {
               <span>Menu Quota</span>
             </a>
 
+            {/* Direct Dial Buttons */}
             <a
               href="tel:9032479193"
-              className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#991b1b] to-[#b91c1c] hover:from-[#b91c1c] hover:to-[#dc2626] text-white text-xs font-bold shadow-xs transition-transform active:scale-95"
+              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-gradient-to-r from-[#991b1b] to-[#b91c1c] hover:from-[#b91c1c] hover:to-[#dc2626] text-white text-[11px] font-bold shadow-xs transition-transform active:scale-95"
+              title="Call Santanosh: 90324 79193"
             >
               <Phone className="h-3 w-3" />
-              <span className="hidden xs:inline">Call</span>
+              <span className="hidden xs:inline">Santanosh:</span>
+              <span>90324 79193</span>
+            </a>
+
+            <a
+              href="tel:9032479194"
+              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-gradient-to-r from-[#b45309] to-[#d97706] hover:from-[#d97706] hover:to-[#f59e0b] text-white text-[11px] font-bold shadow-xs transition-transform active:scale-95"
+              title="Call Naidu: 90324 79194"
+            >
+              <Phone className="h-3 w-3" />
+              <span className="hidden xs:inline">Naidu:</span>
+              <span>90324 79194</span>
             </a>
 
             {/* Mobile / Tablet Menu Button */}
@@ -157,7 +171,7 @@ export const Navbar: React.FC = () => {
                   <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
                   <div>
                     <h3 className="font-royal text-xs font-bold text-[#78350f]">S.V.S. CATERING</h3>
-                    <p className="text-[9px] text-[#991b1b] font-telugu">అనకాపల్లి & వైజాగ్</p>
+                    <p className="text-[9px] text-[#991b1b] font-telugu font-bold">శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్</p>
                   </div>
                 </div>
                 <button
@@ -191,7 +205,7 @@ export const Navbar: React.FC = () => {
               </div>
             </div>
 
-            {/* Quick Contacts Footer */}
+            {/* Quick Contacts Footer with Both Santanosh & Naidu with their numbers */}
             <div className="mt-4 pt-3 border-t border-amber-100 space-y-2">
               <div className="grid grid-cols-2 gap-2 text-center">
                 <a
@@ -199,16 +213,16 @@ export const Navbar: React.FC = () => {
                   className="p-2 rounded-lg bg-amber-50 border border-amber-200 text-amber-900 text-[11px] font-bold"
                 >
                   <Phone className="h-3 w-3 mx-auto mb-0.5 text-[#b45309]" />
-                  <span>Santanosh</span>
-                  <span className="block text-[9px] text-stone-500 font-normal">90324 79193</span>
+                  <span>Santanosh (సంతోష్)</span>
+                  <span className="block text-[10px] text-red-700 font-extrabold">90324 79193</span>
                 </a>
                 <a
                   href="tel:9032479194"
                   className="p-2 rounded-lg bg-amber-50 border border-amber-200 text-amber-900 text-[11px] font-bold"
                 >
                   <Phone className="h-3 w-3 mx-auto mb-0.5 text-[#b45309]" />
-                  <span>Nayudu</span>
-                  <span className="block text-[9px] text-stone-500 font-normal">90324 79194</span>
+                  <span>Naidu (నాయుడు)</span>
+                  <span className="block text-[10px] text-red-700 font-extrabold">90324 79194</span>
                 </a>
               </div>
             </div>

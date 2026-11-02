@@ -34,7 +34,7 @@ export const FloatingActionDock: React.FC = () => {
       <a
         href="tel:9032479193"
         className="group relative flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#991b1b] to-[#dc2626] text-white shadow-lg hover:scale-105 active:scale-95 transition-all duration-150"
-        aria-label="Call Santanosh & Nayudu"
+        aria-label="Call Santanosh & Naidu"
       >
         <Phone className="h-4 w-4 sm:h-5 sm:w-5 animate-bounce [animation-duration:3s]" />
         <span className="pointer-events-none absolute right-14 hidden rounded-md bg-stone-900/90 backdrop-blur-xs px-2.5 py-1 text-xs font-bold text-white shadow-md border border-red-500/40 whitespace-nowrap lg:group-hover:block">

@@ -89,11 +89,11 @@ export const HeroCarousel: React.FC = () => {
         </div>
 
         {/* Clean Call to Action Buttons */}
-        <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5 w-full sm:w-auto">
           <a
             href="#booking-quota"
             onClick={triggerFestiveConfetti}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#d97706] via-[#f59e0b] to-[#d97706] px-6 py-2.5 text-xs sm:text-sm font-bold text-stone-900 shadow-md hover:brightness-110 hover:scale-105 transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#d97706] via-[#f59e0b] to-[#d97706] px-5 py-2.5 text-xs sm:text-sm font-bold text-stone-900 shadow-md hover:brightness-110 hover:scale-105 transition-all"
           >
             <CalendarCheck className="h-4 w-4 text-stone-900" />
             Check Menu Quota
@@ -101,17 +101,27 @@ export const HeroCarousel: React.FC = () => {
 
           <a
             href="#food"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-full border border-amber-300/80 bg-black/50 hover:bg-black/70 px-5 py-2.5 text-xs sm:text-sm font-semibold text-amber-100 backdrop-blur-md transition-all hover:scale-105"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-full border border-amber-300/80 bg-black/50 hover:bg-black/70 px-4 py-2.5 text-xs sm:text-sm font-semibold text-amber-100 backdrop-blur-md transition-all hover:scale-105"
           >
             Explore Feasts
           </a>
 
+          {/* Call Santanosh Button */}
           <a
             href="tel:9032479193"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-[#991b1b] to-[#b91c1c] hover:from-[#b91c1c] hover:to-[#dc2626] px-5 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md transition-all hover:scale-105"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-[#991b1b] to-[#b91c1c] hover:from-[#b91c1c] hover:to-[#dc2626] px-4 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md transition-all hover:scale-105"
           >
             <Phone className="h-3.5 w-3.5" />
-            Call Santanosh & Nayudu
+            <span>Santanosh: 90324 79193</span>
+          </a>
+
+          {/* Call Naidu Button (prominently displaying Naidu 9032479194) */}
+          <a
+            href="tel:9032479194"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-[#b45309] to-[#d97706] hover:from-[#d97706] hover:to-[#f59e0b] px-4 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md transition-all hover:scale-105"
+          >
+            <Phone className="h-3.5 w-3.5" />
+            <span>Naidu: 90324 79194</span>
           </a>
         </div>
 

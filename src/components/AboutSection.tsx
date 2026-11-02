@@ -50,7 +50,7 @@ export const AboutSection: React.FC = () => {
             </p>
 
             <p className="mt-2.5 text-stone-700 text-xs sm:text-sm leading-relaxed">
-              Whether it is the pure devotional sanctity of a <em>Satyanarayana Vratham Arati Aaku Bhojanam</em> prepared with pure cow ghee and traditional stone-ground Podis, or the rich, royal feast of an authentic <em>Visakha Dum Biryani and Natu Kodi Pulusu</em>, every single recipe is personally tasted and supervised by founders <strong>Santanosh</strong> and <strong>Nayudu</strong>.
+              Whether it is the pure devotional sanctity of a <em>Satyanarayana Vratham Arati Aaku Bhojanam</em> prepared with pure cow ghee and traditional stone-ground Podis, or the rich, royal feast of an authentic <em>Visakha Dum Biryani and Natu Kodi Pulusu</em>, every single recipe is personally tasted and supervised by founders <strong>Santanosh (90324 79193)</strong> and <strong>Naidu (90324 79194)</strong>.
             </p>
 
             {/* Core Values / Badges */}
@@ -101,11 +101,11 @@ export const AboutSection: React.FC = () => {
                 </a>
               </div>
 
-              {/* Founder 2: Nayudu */}
+              {/* Founder 2: Naidu */}
               <div className="p-3 rounded-xl bg-white border border-amber-200 mb-2.5 flex items-center justify-between shadow-2xs">
                 <div>
                   <h5 className="font-bold text-[#1c1917] text-xs sm:text-sm">
-                    Nayudu <span className="font-telugu text-[#991b1b] font-bold">(నాయుడు)</span>
+                    Naidu <span className="font-telugu text-[#991b1b] font-bold">(నాయుడు)</span>
                   </h5>
                   <p className="text-[10px] text-stone-500 font-medium">Owner & Event Operations Lead</p>
                 </div>

@@ -26,7 +26,7 @@ export const BookingMenuQuota: React.FC = () => {
     if (includeLiveJalebi) addOns.push('Live Bellam Jalebi Stall');
     if (includeLiveChaat) addOns.push('Live Pani Puri & Chaat Stall');
 
-    const message = `*Namaskaram S.V.S. Catering (Santanosh & Nayudu Garu)*,%0A%0A` +
+    const message = `*Namaskaram S.V.S. Catering (Santanosh & Naidu Garu)*,%0A%0A` +
       `I would like to check date quota and request catering quotation for our celebration:%0A` +
       `---------------------------------------%0A` +
       `👤 *Name:* ${clientName || 'Valued Guest'}%0A` +
@@ -89,7 +89,7 @@ export const BookingMenuQuota: React.FC = () => {
                   S.V.S. ROYAL BANQUET MENU
                 </span>
                 <span className="text-[10px] text-amber-100 font-telugu block -mt-0.5">
-                  శ్రీ వెంకటేశ్వర స్వామి క్యాటరింగ్ • అనకాపల్లి & వైజాగ్
+                  శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్ • అనకాపల్లి & వైజాగ్
                 </span>
               </div>
             </div>
@@ -429,7 +429,7 @@ export const BookingMenuQuota: React.FC = () => {
                     </a>
                     <span>•</span>
                     <a href="tel:9032479194" className="hover:underline flex items-center gap-1">
-                      <Phone className="h-2.5 w-2.5" /> Nayudu: 90324 79194
+                      <Phone className="h-2.5 w-2.5" /> Naidu (నాయుడు): 90324 79194
                     </a>
                   </div>
                 </div>
