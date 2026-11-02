@@ -70,7 +70,7 @@ export const ContactSection: React.FC = () => {
                   S.V.S. Caterers
                 </span>
                 <span className="text-[11px] text-[#fef08a] font-telugu block -mt-0.5">
-                  శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్
+                  శ్రీ వెంకటేశ్వర స్వామి క్యాటరింగ్
                 </span>
               </div>
             </div>
@@ -117,7 +117,7 @@ export const ContactSection: React.FC = () => {
                 </div>
               </a>
 
-              {/* Phone 2: Naidu */}
+              {/* Phone 2: Nayudu */}
               <a
                 href="tel:9032479194"
                 className="group flex items-center gap-3 p-1.5 rounded-xl hover:bg-white/5 transition-all"
@@ -129,7 +129,7 @@ export const ContactSection: React.FC = () => {
                   <span className="text-sm sm:text-base font-bold text-white group-hover:text-[#fde047] transition-colors block">
                     +91 90324 79194
                   </span>
-                  <span className="text-[10px] text-stone-300">Naidu (నాయుడు) • Owner</span>
+                  <span className="text-[10px] text-stone-300">Nayudu (నాయుడు) • Owner</span>
                 </div>
               </a>
 
@@ -200,7 +200,7 @@ export const ContactSection: React.FC = () => {
                   </div>
                   <h4 className="font-bold text-sm text-emerald-900">Enquiry Forwarded!</h4>
                   <p className="text-xs text-stone-600">
-                    Your details are sent to Santanosh & Naidu via WhatsApp. They will contact you shortly!
+                    Your details are sent to Santanosh & Nayudu via WhatsApp. They will contact you shortly!
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
