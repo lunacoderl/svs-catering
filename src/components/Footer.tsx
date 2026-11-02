@@ -28,12 +28,12 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-xs text-stone-600 leading-relaxed max-w-sm">
-              Celebrating 10+ years (2015-2025) of crafting authentic, soul-touching Andhra feasts for weddings, gruhapravesams, and grand banquets across Anakapalle and Visakhapatnam.
+              Celebrating 12+ years experience of crafting authentic, soul-touching Andhra feasts for weddings, gruhapravesams, and grand banquets across Anakapalle and Visakhapatnam.
             </p>
 
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-[11px] font-bold">
               <Sparkles className="h-3 w-3 text-amber-600" />
-              10th Anniversary Celebrated Milestone (2015 – 2025+)
+              12+ Years Experience Milestone
             </div>
           </div>
 
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
                 <a href="#hero" className="hover:text-[#b45309] transition-colors">✦ Home</a>
               </li>
               <li>
-                <a href="#about" className="hover:text-[#b45309] transition-colors">✦ 10 Yrs Heritage & Story</a>
+                <a href="#about" className="hover:text-[#b45309] transition-colors">✦ 12+ Yrs Experience & Story</a>
               </li>
               <li>
                 <a href="#food" className="hover:text-[#b45309] transition-colors">✦ Pure Veg & Non-Veg Menus</a>

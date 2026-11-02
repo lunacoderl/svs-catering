@@ -33,8 +33,8 @@ export function App() {
 
         {/* Transition Gap 1 */}
         <SectionDivider 
-          title="10 Years Heritage & Trust" 
-          telugu="10 సంవత్సరాల విశ్వసనీయత • సంప్రదాయ విందు వైభవం" 
+          title="12+ Years Experience & Trust" 
+          telugu="12+ సంవత్సరాల అనుభవం & విశ్వసనీయత • సంప్రదాయ విందు వైభవం" 
         />
 
         {/* About Section */}

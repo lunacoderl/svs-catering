@@ -16,13 +16,13 @@ export const AboutSection: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 rounded-full border border-amber-400 bg-black/60 px-3.5 py-1 text-xs font-bold uppercase tracking-widest text-[#fde047] mb-2 backdrop-blur-md">
-            <Sparkles className="h-3.5 w-3.5 text-amber-400" /> 10th Anniversary Milestone (2015 – 2025)
+            <Sparkles className="h-3.5 w-3.5 text-amber-400" /> 12+ Years Experience Milestone
           </div>
           <h2 className="font-royal text-2xl sm:text-4xl font-bold text-white tracking-tight drop-shadow">
-            A Decade of Royal Feasts & <span className="text-amber-300">Cherished Memories</span>
+            12+ Years of Royal Feasts & <span className="text-amber-300">Cherished Memories</span>
           </h2>
           <p className="font-telugu text-sm sm:text-base text-amber-200 font-bold mt-1 drop-shadow">
-            10 సంవత్సరాల విశ్వసనీయత • అచ్చతెలుగు రుచుల అపురూప వేదిక
+            12+ సంవత్సరాల అనుభవం & విశ్వసనీయత • అచ్చతెలుగు రుచుల అపురూప వేదిక
           </p>
           <div className="mt-3 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-amber-400/60" />
@@ -46,7 +46,7 @@ export const AboutSection: React.FC = () => {
             <p className="mt-3 text-stone-700 text-xs sm:text-sm leading-relaxed">
               Founded in 2015 at <strong>Sivanaidu Gardens, Karrivari Street, Gavarapalem, Anakapalle</strong>,
               <strong> S.V.S. Catering</strong> was born from a timeless devotion to the authentic, heartwarming culinary traditions of Andhra.
-              On <strong>June 12, 2025</strong>, we celebrated our milestone <strong>10th Anniversary</strong>—a celebration of over 1,500 grand wedding banquets, Gruhapravesams, and joyous milestones.
+              With over <strong>12+ Years Experience</strong>, we have catered over 1,500+ grand wedding banquets, Gruhapravesams, and joyous milestones across Anakapalle and Visakhapatnam.
             </p>
 
             <p className="mt-2.5 text-stone-700 text-xs sm:text-sm leading-relaxed">
@@ -133,8 +133,8 @@ export const AboutSection: React.FC = () => {
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           <div className="bg-[#fffdfa]/95 backdrop-blur-md border border-amber-300 rounded-xl p-4 text-center shadow-lg">
             <span className="font-royal text-2xl sm:text-3xl font-extrabold text-[#b45309] block">12+</span>
-            <span className="text-xs text-stone-800 font-bold uppercase tracking-wider mt-0.5 block">Years of Excellence</span>
-            <span className="font-telugu text-[10px] text-[#991b1b] font-semibold block mt-0.5">2015 - 2026+ మైలురాయి</span>
+            <span className="text-xs text-stone-800 font-bold uppercase tracking-wider mt-0.5 block">Years Experience</span>
+            <span className="font-telugu text-[10px] text-[#991b1b] font-semibold block mt-0.5">12+ సంవత్సరాల అనుభవం</span>
           </div>
 
           <div className="bg-[#fffdfa]/95 backdrop-blur-md border border-amber-300 rounded-xl p-4 text-center shadow-lg">

@@ -1,13 +1,13 @@
 # S.V.S. Catering (శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్)
 
-> **Celebrating 10+ Years of Royal Feasts & Auspicious Celebrations (2015 – 2025+)**  
+> **Celebrating 12+ Years Experience of Royal Feasts & Auspicious Celebrations (2014 – 2026+)**  
 > Serving Anakapalle, Visakhapatnam (Vizag), and across Andhra Pradesh.
 
 ---
 
 ## 🌟 About the Business
 - **Business Names**: S.V.S. Catering / SVS Catering
-- **Founding Heritage**: Established in 2015; celebrated 10th anniversary on June 12, 2025.
+- **Founding Heritage**: Established with 12+ years experience of authentic culinary mastery.
 - **Headquarters Address**: Sivanaidu Gardens, Karrivari Street, Gavarapalem, Anakapalli, Visakhapatnam, Andhra Pradesh – 531002.
 - **Founders & Direct Hotlines**:
   - **Santanosh (సంతోష్)**: `+91 90324 79193` (Owner & Culinary Director)

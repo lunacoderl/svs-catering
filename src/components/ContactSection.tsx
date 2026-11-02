@@ -80,7 +80,7 @@ export const ContactSection: React.FC = () => {
           </div>
 
           <div className="hidden lg:flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/40 border border-[#ca8a04]/40 text-[#fde047] text-xs font-semibold backdrop-blur-md">
-            <span>🎉 10th Anniversary Celebrated (2015 – 2025+)</span>
+            <span>🎉 12+ Years Experience (Grand Feasts & Banquets)</span>
           </div>
         </div>
 

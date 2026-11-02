@@ -4,7 +4,7 @@ export const BUSINESS_INFO = {
   name: 'S.V.S. Catering',
   teluguName: 'శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్ (SVS Catering)',
   tagline: 'Traditional Flavors | Grand Events | Complete Catering',
-  anniversary: '10th Anniversary Celebrated (2015 - 2026+)',
+  anniversary: '12+ Years Experience (2014 - 2026+)',
   address: 'Sivanaidu Gardens, Karrivari Street, Gavarapalem, Anakapalli, Visakhapatnam, Andhra Pradesh – 531002',
   email: 'svscatering.vizag@gmail.com',
   primaryContacts: [
@@ -30,7 +30,7 @@ export const HERO_SLIDES = [
     image: '/carosel1.png',
     title: 'Traditional Andhra Kalyana Bhojanam',
     teluguTitle: 'సంప్రదాయ ఆంధ్ర కళ్యాణ భోజనం',
-    subtitle: 'Celebrating 10+ Years of Pure Vegetarian Feasts & Aromatic Delights',
+    subtitle: 'Celebrating 12+ Years Experience of Pure Vegetarian Feasts & Aromatic Delights',
     highlight: 'Pure Ghee Delicacies • Authentic Podis & Chutneys • Banana Leaf Elegance',
   },
   {

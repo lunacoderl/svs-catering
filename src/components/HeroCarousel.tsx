@@ -60,7 +60,7 @@ export const HeroCarousel: React.FC = () => {
           className="cursor-pointer inline-flex items-center gap-1.5 rounded-full border border-amber-400 bg-black/60 backdrop-blur-md px-3.5 py-1 text-xs font-bold text-[#fde047] shadow-sm hover:scale-105 transition-all mb-3"
         >
           <Award className="h-3.5 w-3.5 text-[#fde047]" />
-          <span>10+ Years of Feasts (2015 – 2025+)</span>
+          <span>12+ Years Experience (2014 – 2026+)</span>
           <Sparkles className="h-3.5 w-3.5 text-[#fde047]" />
         </div>
 

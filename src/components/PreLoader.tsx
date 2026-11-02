@@ -51,7 +51,7 @@ export const PreLoader: React.FC<PreLoaderProps> = ({ onLoaded }) => {
       {/* Brand & Telugu Blessing */}
       <div className="text-center px-4">
         <div className="inline-flex items-center gap-2 rounded-full border border-[#ca8a04]/40 bg-[#ca8a04]/10 px-3 py-1 text-xs font-semibold tracking-wider text-[#fde047] mb-2 uppercase">
-          <Sparkles className="h-3.5 w-3.5" /> 10th Anniversary Milestone (2015-2025)
+          <Sparkles className="h-3.5 w-3.5" /> 12+ Years Experience (2014-2026+)
         </div>
         <h1 className="text-2xl sm:text-3xl font-royal font-bold tracking-wide text-white">
           S.V.S. CATERING
