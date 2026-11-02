@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   Menu, 
   X, 
@@ -9,53 +9,112 @@ import {
   Star, 
   HelpCircle,
   Award,
-  Sparkles
+  Sparkles,
+  ChevronDown,
+  MessageSquare
 } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [hotlineDropdownOpen, setHotlineDropdownOpen] = useState(false);
+  const [activeHotlineIdx, setActiveHotlineIdx] = useState(0);
 
+  const hotlineRef = useRef<HTMLDivElement>(null);
+
+  const hotlines = [
+    { name: 'Santanosh', telugu: 'సంతోష్', number: '90324 79193', tel: '9032479193', role: 'Owner & Culinary Director' },
+    { name: 'Naidu', telugu: 'నాయుడు', number: '90324 79194', tel: '9032479194', role: 'Owner & Operations Lead' },
+  ];
+
+  // Subtle auto-switch between Santanosh and Naidu every 3.2 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveHotlineIdx((prev) => (prev + 1) % hotlines.length);
+    }, 3200);
+    return () => clearInterval(timer);
+  }, [hotlines.length]);
+
+  // Handle scroll and auto-close dropdown on scroll
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+      if (window.scrollY > 50) {
+        setHotlineDropdownOpen(false);
+      }
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Handle click outside to close dropdown
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (hotlineRef.current && !hotlineRef.current.contains(event.target as Node)) {
+        setHotlineDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   const navLinks = [
     { label: 'Heritage', icon: Award, href: '#about' },
-    { label: 'Menus', icon: Utensils, href: '#food' },
+    { label: 'Feasts', icon: Utensils, href: '#food' },
     { label: 'Occasions', icon: Sparkles, href: '#occasions' },
     { label: 'Banquet Quota', icon: CalendarCheck, href: '#booking-quota', highlight: true },
     { label: 'Venues', icon: MapPin, href: '#locations' },
-    { label: 'Reviews', icon: Star, href: '#testimonials' },
-    { label: 'FAQ', icon: HelpCircle, href: '#faq' },
+    { label: 'Reviews', icon: Star, href: '#testimonials', hideOnLg: true },
+    { label: 'FAQ', icon: HelpCircle, href: '#faq', hideOnLg: true },
     { label: 'Contact', icon: Phone, href: '#contact' },
   ];
 
   return (
     <div className="sticky top-0 z-50 w-full shadow-sm">
-      {/* Sleek Top Announcement Strip (Slim & Compact with BOTH NUMBERS ON SCREEN) */}
-      <div className="bg-gradient-to-r from-[#881337] via-[#9a3412] to-[#881337] text-amber-100 text-[11px] py-1 px-3 border-b border-amber-300/20">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-1.5">
+      {/* Sleek Top Announcement Strip (Slim, Non-Wrapping, Both Numbers Clearly on Screen) */}
+      <div className="bg-gradient-to-r from-[#78350f] via-[#991b1b] to-[#78350f] text-amber-100 text-[11px] py-1 px-3 border-b border-amber-300/20">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+          {/* Brand & Heritage */}
           <div className="flex items-center gap-1.5 truncate">
             <span className="h-1.5 w-1.5 rounded-full bg-[#fde047] animate-ping shrink-0" />
             <span className="font-semibold truncate">
               🎉 10+ Yrs (2015-2025) • శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్
             </span>
           </div>
-          {/* BOTH NUMBERS EXPLICITLY ON SCREEN */}
-          <div className="flex items-center gap-2 sm:gap-3 text-[11px] font-semibold shrink-0">
-            <a href="tel:9032479193" className="hover:text-white transition-colors flex items-center gap-1">
+
+          {/* Desktop Dual Numbers Direct Display */}
+          <div className="hidden md:flex items-center gap-3 text-[11px] font-semibold shrink-0">
+            <a
+              href="tel:9032479193"
+              className="hover:text-white transition-colors flex items-center gap-1 group"
+              title="Call Santanosh: +91 90324 79193"
+            >
               <Phone className="h-2.5 w-2.5 text-[#fde047]" />
-              <span>Santanosh:</span> <strong className="text-white">90324 79193</strong>
+              <span className="text-amber-200 group-hover:text-white">Santanosh:</span>
+              <strong className="text-white group-hover:underline">90324 79193</strong>
             </a>
-            <span className="text-amber-200/50">|</span>
-            <a href="tel:9032479194" className="hover:text-white transition-colors flex items-center gap-1">
+            <span className="text-amber-400/40">|</span>
+            <a
+              href="tel:9032479194"
+              className="hover:text-white transition-colors flex items-center gap-1 group"
+              title="Call Naidu: +91 90324 79194"
+            >
               <Phone className="h-2.5 w-2.5 text-[#fde047]" />
-              <span>Naidu:</span> <strong className="text-white">90324 79194</strong>
+              <span className="text-amber-200 group-hover:text-white">Naidu (నాయుడు):</span>
+              <strong className="text-white group-hover:underline">90324 79194</strong>
+            </a>
+          </div>
+
+          {/* Mobile Hotlines Badge */}
+          <div className="md:hidden flex items-center gap-1.5 text-[10px] font-bold text-amber-200 shrink-0">
+            <a href="tel:9032479193" className="hover:text-white flex items-center gap-0.5">
+              <span>సంతోష్:</span>
+              <span className="text-white">90324 79193</span>
+            </a>
+            <span className="text-amber-400/40">•</span>
+            <a href="tel:9032479194" className="hover:text-white flex items-center gap-0.5">
+              <span>నాయుడు:</span>
+              <span className="text-white">90324 79194</span>
             </a>
           </div>
         </div>
@@ -92,8 +151,8 @@ export const Navbar: React.FC = () => {
             </div>
           </a>
 
-          {/* Clean Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 text-xs font-semibold">
+          {/* Clean Desktop Navigation (Uncluttered & Airy) */}
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2 text-xs font-semibold">
             {navLinks.map((link) => {
               const Icon = link.icon;
               return (
@@ -101,6 +160,8 @@ export const Navbar: React.FC = () => {
                   key={link.label}
                   href={link.href}
                   className={`px-2.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
+                    link.hideOnLg ? 'hidden xl:flex' : 'flex'
+                  } ${
                     link.highlight
                       ? 'bg-gradient-to-r from-[#d97706] to-[#b45309] text-white shadow-xs hover:brightness-110'
                       : 'text-stone-700 hover:text-[#b45309] hover:bg-amber-50'
@@ -113,8 +174,9 @@ export const Navbar: React.FC = () => {
             })}
           </nav>
 
-          {/* Quick Header Actions with BOTH Naidu 90324 79194 and Santanosh 90324 79193 */}
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          {/* Quick Header Actions: Unique Royal Hotline Capsule + Menu Quota */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Menu Quota Button */}
             <a
               href="#booking-quota"
               className="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-amber-400 bg-amber-50 hover:bg-amber-100 text-[#78350f] text-xs font-bold transition-all shadow-2xs"
@@ -123,26 +185,115 @@ export const Navbar: React.FC = () => {
               <span>Menu Quota</span>
             </a>
 
-            {/* Direct Dial Buttons */}
-            <a
-              href="tel:9032479193"
-              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-gradient-to-r from-[#991b1b] to-[#b91c1c] hover:from-[#b91c1c] hover:to-[#dc2626] text-white text-[11px] font-bold shadow-xs transition-transform active:scale-95"
-              title="Call Santanosh: 90324 79193"
-            >
-              <Phone className="h-3 w-3" />
-              <span className="hidden xs:inline">Santanosh:</span>
-              <span>90324 79193</span>
-            </a>
+            {/* UNIQUE ROYAL HOTLINE CAPSULE (Compact, Non-Clumsy, Auto-Rotating Ticker & Dropdown) */}
+            <div className="relative" ref={hotlineRef}>
+              <button
+                type="button"
+                onClick={() => setHotlineDropdownOpen(!hotlineDropdownOpen)}
+                className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-full bg-gradient-to-r from-[#881337] via-[#9a3412] to-[#78350f] text-white text-[11px] sm:text-xs font-bold shadow-xs hover:shadow-md transition-all border border-amber-400/50 hover:border-amber-300 cursor-pointer active:scale-95"
+                aria-label="Direct Hotlines for Santanosh and Naidu"
+                title="Click to view direct owner hotlines"
+              >
+                {/* Glowing Live Indicator Icon */}
+                <div className="relative flex items-center justify-center shrink-0">
+                  <Phone className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-[#fde047]" />
+                  <span className="absolute -top-0.5 -right-0.5 h-1.5 w-1.5 rounded-full bg-emerald-400 animate-ping" />
+                </div>
 
-            <a
-              href="tel:9032479194"
-              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-gradient-to-r from-[#b45309] to-[#d97706] hover:from-[#d97706] hover:to-[#f59e0b] text-white text-[11px] font-bold shadow-xs transition-transform active:scale-95"
-              title="Call Naidu: 90324 79194"
-            >
-              <Phone className="h-3 w-3" />
-              <span className="hidden xs:inline">Naidu:</span>
-              <span>90324 79194</span>
-            </a>
+                {/* Vertical Auto-Rotating Ticker Showing BOTH Santanosh and Naidu */}
+                <div className="h-4 overflow-hidden text-left min-w-[125px] sm:min-w-[145px]">
+                  <div
+                    className="transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateY(-${activeHotlineIdx * 100}%)` }}
+                  >
+                    {hotlines.map((h) => (
+                      <div key={h.name} className="h-4 flex items-center gap-1 leading-none">
+                        <span className="text-amber-200 font-semibold">{h.name}:</span>
+                        <span className="text-white font-extrabold tracking-wide">{h.number}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Dropdown Chevron */}
+                <ChevronDown
+                  className={`h-3 w-3 sm:h-3.5 sm:w-3.5 text-amber-300 transition-transform duration-200 shrink-0 ${
+                    hotlineDropdownOpen ? 'rotate-180 text-white' : ''
+                  }`}
+                />
+              </button>
+
+              {/* ROYAL HOTLINE POP-OVER CLOCHE (Opens on click for 1-tap dialling) */}
+              {hotlineDropdownOpen && (
+                <div className="absolute right-0 top-full mt-2 w-72 sm:w-80 rounded-2xl bg-[#fffdfa] border-2 border-amber-300 shadow-2xl p-4 z-50 text-stone-800 animate-in fade-in slide-in-from-top-2 duration-200">
+                  {/* Cloche Header */}
+                  <div className="flex items-center justify-between pb-2 border-b border-amber-100">
+                    <div className="flex items-center gap-1.5">
+                      <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                      <h4 className="font-royal text-xs font-bold text-[#78350f]">
+                        ROYAL HOTLINES • సంప్రదించండి
+                      </h4>
+                    </div>
+                    <span className="text-[9px] text-amber-800 bg-amber-100 font-semibold px-2 py-0.5 rounded-full">
+                      24/7 Booking
+                    </span>
+                  </div>
+
+                  <p className="text-[10px] text-stone-600 mt-1 mb-3 font-telugu">
+                    శ్రీ వెంకట సుబ్రహ్మణ్యం కేటరింగ్ • ఆర్డర్స్ & ముహూర్తం తేదీ కోటా
+                  </p>
+
+                  {/* Founder 1: Santanosh */}
+                  <div className="p-2.5 rounded-xl bg-amber-50/80 border border-amber-200 mb-2 flex items-center justify-between gap-2 hover:bg-amber-100/70 transition-colors">
+                    <div>
+                      <div className="flex items-center gap-1">
+                        <span className="font-bold text-xs text-stone-900">Santanosh</span>
+                        <span className="text-[10px] text-[#991b1b] font-telugu font-bold">(సంతోష్)</span>
+                      </div>
+                      <p className="text-[9px] text-stone-500 font-medium">Founder & Catering Director</p>
+                      <p className="text-xs font-extrabold text-[#78350f] mt-0.5">+91 90324 79193</p>
+                    </div>
+                    <a
+                      href="tel:9032479193"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#991b1b] to-[#b91c1c] text-white text-[11px] font-bold shadow-xs hover:scale-105 active:scale-95 transition-all"
+                    >
+                      <Phone className="h-3 w-3" />
+                      <span>Call</span>
+                    </a>
+                  </div>
+
+                  {/* Founder 2: Naidu */}
+                  <div className="p-2.5 rounded-xl bg-amber-50/80 border border-amber-200 mb-3 flex items-center justify-between gap-2 hover:bg-amber-100/70 transition-colors">
+                    <div>
+                      <div className="flex items-center gap-1">
+                        <span className="font-bold text-xs text-stone-900">Naidu</span>
+                        <span className="text-[10px] text-[#991b1b] font-telugu font-bold">(నాయుడు)</span>
+                      </div>
+                      <p className="text-[9px] text-stone-500 font-medium">Founder & Operations Lead</p>
+                      <p className="text-xs font-extrabold text-[#78350f] mt-0.5">+91 90324 79194</p>
+                    </div>
+                    <a
+                      href="tel:9032479194"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#b45309] to-[#d97706] text-white text-[11px] font-bold shadow-xs hover:scale-105 active:scale-95 transition-all"
+                    >
+                      <Phone className="h-3 w-3" />
+                      <span>Call</span>
+                    </a>
+                  </div>
+
+                  {/* Instant WhatsApp Option */}
+                  <a
+                    href="https://wa.me/919032479193?text=Namaskaram%20S.V.S.%20Catering%20(Santanosh%20&%20Naidu%20Garu),%20I%20would%20like%20to%20enquire%20about%20catering%20services%20for%20our%20celebration."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-1.5 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white text-xs font-bold shadow-xs transition-transform active:scale-98"
+                  >
+                    <MessageSquare className="h-3.5 w-3.5" />
+                    <span>WhatsApp Inquiry (Instant Response)</span>
+                  </a>
+                </div>
+              )}
+            </div>
 
             {/* Mobile / Tablet Menu Button */}
             <button

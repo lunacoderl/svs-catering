@@ -100,3 +100,20 @@
     - Mobile navigation drawer quick contact buttons.
 - Build verified with `npm run build` (0 errors).
 - Committed and pushed to GitHub remote `origin/main`.
+
+### Phase 7: Navbar Optimization - Unique Royal Hotline Hub & Cloche (2026-11-02)
+- **Problem**: Navbar had multiple redundant wide call buttons causing horizontal crowding, wrapping, and clumsy layout across mobile, tablet, and desktop viewports.
+- **Unique Solution Implemented**:
+  1. **Top Announcement Strip**:
+     - Desktop/Tablet: Clean single-row strip with `Santanosh: 90324 79193 | Naidu: 90324 79194`.
+     - Mobile: Non-wrapping compact hotlines badge (`90324 79193 (సంతోష్) • 90324 79194 (నాయుడు)`).
+  2. **Main Navbar Rotating Hotline Capsule (`Navbar.tsx`)**:
+     - Unified two separate clumsy buttons into ONE sleek, luxury Royal Hotline pill.
+     - Features an animated green live indicator (`🟢 24/7 Available`).
+     - Includes a vertical auto-rotating smooth ticker transitioning between **Santanosh: 90324 79193** and **Naidu: 90324 79194** every 3.2 seconds without taking up extra width.
+     - Features an interactive dropdown pop-over cloche that opens upon click with direct 1-tap call cards for both Santanosh and Naidu, plus instant WhatsApp inquiry.
+     - Auto-closes on outside click or downward scroll.
+  3. **Desktop Nav Item Breathing Room**:
+     - Streamlined primary navigation links and hidden overflow links on smaller desktop screens (`hideOnLg`) to prevent horizontal clipping.
+- **Verification**: `npm run build` completed cleanly with 0 TypeScript/Vite errors.
+- **Git Push**: Committed and pushed to GitHub remote `origin/main`.
