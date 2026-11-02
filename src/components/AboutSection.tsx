@@ -3,8 +3,8 @@ import { Award, Utensils, HeartHandshake, ShieldCheck, Clock, MapPin, Sparkles, 
 
 export const AboutSection: React.FC = () => {
   return (
-    <section 
-      id="about" 
+    <section
+      id="about"
       className="relative min-h-screen py-20 px-3 sm:px-6 lg:px-8 bg-fixed-parallax overflow-hidden"
       style={{ backgroundImage: `url('/about-bg.png')` }}
     >
@@ -44,8 +44,8 @@ export const AboutSection: React.FC = () => {
             </h3>
 
             <p className="mt-3 text-stone-700 text-xs sm:text-sm leading-relaxed">
-              Founded in 2015 at <strong>Sivanaidu Gardens, Karrivari Street, Gavarapalem, Anakapalle</strong>, 
-              <strong> S.V.S. Catering</strong> was born from a timeless devotion to the authentic, heartwarming culinary traditions of Andhra. 
+              Founded in 2015 at <strong>Sivanaidu Gardens, Karrivari Street, Gavarapalem, Anakapalle</strong>,
+              <strong> S.V.S. Catering</strong> was born from a timeless devotion to the authentic, heartwarming culinary traditions of Andhra.
               On <strong>June 12, 2025</strong>, we celebrated our milestone <strong>10th Anniversary</strong>—a celebration of over 1,500 grand wedding banquets, Gruhapravesams, and joyous milestones.
             </p>
 
@@ -132,9 +132,9 @@ export const AboutSection: React.FC = () => {
         {/* Milestone Statistics Strip */}
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           <div className="bg-[#fffdfa]/95 backdrop-blur-md border border-amber-300 rounded-xl p-4 text-center shadow-lg">
-            <span className="font-royal text-2xl sm:text-3xl font-extrabold text-[#b45309] block">10+</span>
+            <span className="font-royal text-2xl sm:text-3xl font-extrabold text-[#b45309] block">12+</span>
             <span className="text-xs text-stone-800 font-bold uppercase tracking-wider mt-0.5 block">Years of Excellence</span>
-            <span className="font-telugu text-[10px] text-[#991b1b] font-semibold block mt-0.5">2015 - 2025+ మైలురాయి</span>
+            <span className="font-telugu text-[10px] text-[#991b1b] font-semibold block mt-0.5">2015 - 2026+ మైలురాయి</span>
           </div>
 
           <div className="bg-[#fffdfa]/95 backdrop-blur-md border border-amber-300 rounded-xl p-4 text-center shadow-lg">

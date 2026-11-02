@@ -4,7 +4,7 @@ export const BUSINESS_INFO = {
   name: 'S.V.S. Catering',
   teluguName: 'శ్రీ వెంకటేశ్వర స్వామి క్యాటరింగ్ (SVS Catering)',
   tagline: 'Traditional Flavors | Grand Events | Complete Catering',
-  anniversary: '10th Anniversary Celebrated (2015 - 2025+)',
+  anniversary: '10th Anniversary Celebrated (2015 - 2026+)',
   address: 'Sivanaidu Gardens, Karrivari Street, Gavarapalem, Anakapalli, Visakhapatnam, Andhra Pradesh – 531002',
   email: 'svscatering.vizag@gmail.com',
   primaryContacts: [
