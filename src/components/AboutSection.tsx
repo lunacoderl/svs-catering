@@ -88,13 +88,14 @@ export const AboutSection: React.FC = () => {
               <div className="p-3 rounded-xl bg-white border border-amber-200 mb-2.5 flex items-center justify-between shadow-2xs">
                 <div>
                   <h5 className="font-bold text-[#1c1917] text-xs sm:text-sm">
-                    Santanosh <span className="font-telugu text-[#991b1b] font-bold">(సంతోష్)</span>
+                    1. Santanosh <span className="font-telugu text-[#991b1b] font-bold">(సంతోష్)</span>
                   </h5>
                   <p className="text-[10px] text-stone-500 font-medium">Owner & Culinary Director</p>
                 </div>
                 <a
                   href="tel:9032479193"
                   className="flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs font-bold hover:bg-amber-200 transition-all"
+                  title="Call 1. Santanosh: 90324 79193"
                 >
                   <Phone className="h-3 w-3 text-[#b45309]" />
                   90324 79193
@@ -105,13 +106,14 @@ export const AboutSection: React.FC = () => {
               <div className="p-3 rounded-xl bg-white border border-amber-200 mb-2.5 flex items-center justify-between shadow-2xs">
                 <div>
                   <h5 className="font-bold text-[#1c1917] text-xs sm:text-sm">
-                    Naidu <span className="font-telugu text-[#991b1b] font-bold">(నాయుడు)</span>
+                    2. Naidu <span className="font-telugu text-[#991b1b] font-bold">(నాయుడు)</span>
                   </h5>
                   <p className="text-[10px] text-stone-500 font-medium">Owner & Event Operations Lead</p>
                 </div>
                 <a
                   href="tel:9032479194"
                   className="flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs font-bold hover:bg-amber-200 transition-all"
+                  title="Call 2. Naidu: 90324 79194"
                 >
                   <Phone className="h-3 w-3 text-[#b45309]" />
                   90324 79194

@@ -38,7 +38,7 @@ export const FloatingActionDock: React.FC = () => {
       >
         <Phone className="h-4 w-4 sm:h-5 sm:w-5 animate-bounce [animation-duration:3s]" />
         <span className="pointer-events-none absolute right-14 hidden rounded-md bg-stone-900/90 backdrop-blur-xs px-2.5 py-1 text-xs font-bold text-white shadow-md border border-red-500/40 whitespace-nowrap lg:group-hover:block">
-          📞 Call 90324 79193
+          📞 1. 90324 79193 | 2. 90324 79194
         </span>
       </a>
 

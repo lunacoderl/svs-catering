@@ -113,11 +113,11 @@ export const ContactSection: React.FC = () => {
                   <span className="text-sm sm:text-base font-bold text-white group-hover:text-[#fde047] transition-colors block">
                     +91 90324 79193
                   </span>
-                  <span className="text-[10px] text-stone-300">Santanosh (సంతోష్) • Owner</span>
+                  <span className="text-[10px] text-stone-300 font-telugu">1. సంతోష్ (Santanosh) • Founder & Owner</span>
                 </div>
               </a>
 
-              {/* Phone 2: Nayudu */}
+              {/* Phone 2: Naidu */}
               <a
                 href="tel:9032479194"
                 className="group flex items-center gap-3 p-1.5 rounded-xl hover:bg-white/5 transition-all"
@@ -129,7 +129,7 @@ export const ContactSection: React.FC = () => {
                   <span className="text-sm sm:text-base font-bold text-white group-hover:text-[#fde047] transition-colors block">
                     +91 90324 79194
                   </span>
-                  <span className="text-[10px] text-stone-300">Nayudu (నాయుడు) • Owner</span>
+                  <span className="text-[10px] text-stone-300 font-telugu">2. నాయుడు (Naidu) • Founder & Owner</span>
                 </div>
               </a>
 

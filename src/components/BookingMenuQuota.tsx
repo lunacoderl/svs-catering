@@ -425,11 +425,11 @@ export const BookingMenuQuota: React.FC = () => {
                   </p>
                   <div className="mt-0.5 flex items-center justify-center gap-2 text-xs text-[#b45309] font-bold">
                     <a href="tel:9032479193" className="hover:underline flex items-center gap-1">
-                      <Phone className="h-2.5 w-2.5" /> Santanosh: 90324 79193
+                      <Phone className="h-2.5 w-2.5" /> 1. సంతోష్: 90324 79193
                     </a>
                     <span>•</span>
                     <a href="tel:9032479194" className="hover:underline flex items-center gap-1">
-                      <Phone className="h-2.5 w-2.5" /> Naidu (నాయుడు): 90324 79194
+                      <Phone className="h-2.5 w-2.5" /> 2. నాయుడు: 90324 79194
                     </a>
                   </div>
                 </div>

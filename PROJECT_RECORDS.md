@@ -172,3 +172,21 @@
   - `README.md`: Updated repository documentation.
 - **Verification**: `npm run build` verified with 0 errors.
 - **Git Remote**: Committed and pushed to `https://github.com/lunacoderl/svs-catering.git`.
+
+### Phase 10: Explicit Ordering & Telugu Numbering for Hotlines (2026-11-03)
+- **User Instruction**:
+  - `ఒకటి (1): 9032479193 సంతోష్ (Santanosh)`
+  - `రెండు (2): 9032479194 నాయుడు (Naidu)`
+- **Modifications**:
+  - `src/components/Navbar.tsx`:
+    - Top bar: Updated to `1. సంతోష్: +91 90324 79193` | `2. నాయుడు: +91 90324 79194`.
+    - Mobile drawer: Updated hotlines to `1. సంతోష్ (Santanosh): +91 90324 79193` & `2. నాయుడు (Naidu): +91 90324 79194`.
+  - `src/components/HeroCarousel.tsx`: Updated hero action buttons to `1. సంతోష్: 90324 79193` and `2. నాయుడు: 90324 79194`.
+  - `src/components/ContactSection.tsx`: Formatted phone items as `1. సంతోష్ (Santanosh) • Founder & Owner` and `2. నాయుడు (Naidu) • Founder & Owner`.
+  - `src/components/AboutSection.tsx`: Numbered founder cards as `1. Santanosh (సంతోష్)` and `2. Naidu (నాయుడు)`.
+  - `src/components/BookingMenuQuota.tsx`: Formatted bottom footer contact links to `1. సంతోష్: 90324 79193` and `2. నాయుడు: 90324 79194`.
+  - `src/components/Footer.tsx`: Formatted direct lines as `1. +91 90324 79193 (సంతోష్ - Santanosh)` and `2. +91 90324 79194 (నాయుడు - Naidu)`.
+  - `src/components/FloatingActionDock.tsx`: Updated call tooltip to `📞 1. 90324 79193 | 2. 90324 79194`.
+  - `src/data/cateringData.ts`: Updated primary contacts list and FAQ text to reflect explicit ordering.
+- **Verification**: Verified build (`npm run build`).
+- **Git Push**: Committed and pushed to GitHub remote `origin/main`.

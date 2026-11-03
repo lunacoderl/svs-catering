@@ -78,10 +78,10 @@ export const Footer: React.FC = () => {
                 <Phone className="h-3.5 w-3.5 text-[#b45309] shrink-0 mt-0.5" />
                 <div>
                   <a href="tel:9032479193" className="text-stone-900 hover:text-[#b45309] font-bold block">
-                    +91 90324 79193 <span className="font-normal text-stone-500 font-telugu">(సంతోష్ - Santanosh)</span>
+                    1. +91 90324 79193 <span className="font-normal text-stone-500 font-telugu">(సంతోష్ - Santanosh)</span>
                   </a>
                   <a href="tel:9032479194" className="text-stone-900 hover:text-[#b45309] font-bold block mt-0.5">
-                    +91 90324 79194 <span className="font-normal text-stone-500 font-telugu">(నాయుడు - Naidu)</span>
+                    2. +91 90324 79194 <span className="font-normal text-stone-500 font-telugu">(నాయుడు - Naidu)</span>
                   </a>
                   <span className="text-[10px] text-stone-500 block mt-0.5">
                     Additional: +91 79892 96958 • +91 70136 66316

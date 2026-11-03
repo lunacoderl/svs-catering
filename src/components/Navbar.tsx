@@ -118,27 +118,27 @@ export const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
           {/* Left/Center: Contact Hotlines with Dividers & WhatsApp Inquiry */}
           <div className="flex items-center flex-wrap gap-2 sm:gap-3 text-stone-200 text-[11px]">
-            {/* Santanosh */}
+            {/* 1. Santanosh */}
             <a
               href="tel:9032479193"
               className="hover:text-white flex items-center gap-1 transition-colors"
-              title="Call Santanosh: +91 90324 79193"
+              title="Call 1. Santanosh (సంతోష్): +91 90324 79193"
             >
               <Phone className="h-3 w-3 text-[#fde047]" />
-              <span className="hidden xs:inline text-amber-200">Santanosh:</span>
+              <span className="text-amber-200 font-telugu font-semibold">1. సంతోష్:</span>
               <strong className="text-white font-bold">+91 90324 79193</strong>
             </a>
 
             <span className="text-amber-300/40">|</span>
 
-            {/* Naidu */}
+            {/* 2. Naidu */}
             <a
               href="tel:9032479194"
               className="hover:text-white flex items-center gap-1 transition-colors"
-              title="Call Naidu: +91 90324 79194"
+              title="Call 2. Naidu (నాయుడు): +91 90324 79194"
             >
               <Phone className="h-3 w-3 text-[#fde047]" />
-              <span className="hidden xs:inline text-amber-200">Naidu:</span>
+              <span className="text-amber-200 font-telugu font-semibold">2. నాయుడు:</span>
               <strong className="text-white font-bold">+91 90324 79194</strong>
             </a>
 
@@ -561,9 +561,9 @@ export const Navbar: React.FC = () => {
                   href="tel:9032479193"
                   className="flex items-center justify-between text-xs font-bold text-stone-800 hover:text-[#80141c]"
                 >
-                  <span className="flex items-center gap-1.5 text-stone-600 font-semibold">
+                  <span className="flex items-center gap-1.5 text-stone-700 font-semibold">
                     <Phone className="h-3 w-3 text-[#b45309]" />
-                    Santanosh:
+                    1. సంతోష్ (Santanosh):
                   </span>
                   <span className="text-[#80141c] font-extrabold">+91 90324 79193</span>
                 </a>
@@ -572,9 +572,9 @@ export const Navbar: React.FC = () => {
                   href="tel:9032479194"
                   className="flex items-center justify-between text-xs font-bold text-stone-800 hover:text-[#80141c]"
                 >
-                  <span className="flex items-center gap-1.5 text-stone-600 font-semibold">
+                  <span className="flex items-center gap-1.5 text-stone-700 font-semibold">
                     <Phone className="h-3 w-3 text-[#b45309]" />
-                    Naidu:
+                    2. నాయుడు (Naidu):
                   </span>
                   <span className="text-[#80141c] font-extrabold">+91 90324 79194</span>
                 </a>

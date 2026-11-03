@@ -106,22 +106,24 @@ export const HeroCarousel: React.FC = () => {
             Explore Feasts
           </a>
 
-          {/* Call Santanosh Button */}
+          {/* Call 1. Santanosh Button */}
           <a
             href="tel:9032479193"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-[#991b1b] to-[#b91c1c] hover:from-[#b91c1c] hover:to-[#dc2626] px-4 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md transition-all hover:scale-105"
+            title="Call 1. Santanosh: 90324 79193"
           >
             <Phone className="h-3.5 w-3.5" />
-            <span>Santanosh: 90324 79193</span>
+            <span className="font-telugu font-semibold">1. సంతోష్: 90324 79193</span>
           </a>
 
-          {/* Call Naidu Button (prominently displaying Naidu 9032479194) */}
+          {/* Call 2. Naidu Button */}
           <a
             href="tel:9032479194"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-[#b45309] to-[#d97706] hover:from-[#d97706] hover:to-[#f59e0b] px-4 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md transition-all hover:scale-105"
+            title="Call 2. Naidu: 90324 79194"
           >
             <Phone className="h-3.5 w-3.5" />
-            <span>Naidu: 90324 79194</span>
+            <span className="font-telugu font-semibold">2. నాయుడు: 90324 79194</span>
           </a>
         </div>
 
